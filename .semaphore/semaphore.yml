@@ -6,7 +6,9 @@ agent:
     os_image: ubuntu1804
 blocks:
   - name: Build for Android
-    dependencies: []
+    dependencies:
+      - Build for Web
+      - Test on Web
     task:
       jobs:
         - name: Build
